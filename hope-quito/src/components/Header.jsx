@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/images/Quito_02 Logo.png';
 import menuIcon from '../assets/images/Quito_12 Mark.png';
 
@@ -9,12 +10,10 @@ const Header = () => {
 
   const toggleMenu = () => {
     setMenuOpen(prev => !prev);
-    // animación del icono
     iconRef.current.classList.add('spin');
     setTimeout(() => iconRef.current.classList.remove('spin'), 600);
   };
 
-  // Cerrar menú al hacer clic fuera
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (navRef.current && !navRef.current.contains(e.target) && !iconRef.current.contains(e.target)) {
@@ -25,7 +24,6 @@ const Header = () => {
     return () => document.removeEventListener('click', handleClickOutside);
   }, []);
 
-  // Bloquear scroll cuando el menú está abierto
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : 'auto';
   }, [menuOpen]);
@@ -33,9 +31,9 @@ const Header = () => {
   return (
     <header>
       <div className="logo">
-        <a href="/">
+        <Link to="/" onClick={() => setMenuOpen(false)}>
           <img src={logo} alt="Logo" />
-        </a>
+        </Link>
       </div>
       <img
         ref={iconRef}
@@ -45,11 +43,11 @@ const Header = () => {
         alt="Menú"
       />
       <nav ref={navRef} className={menuOpen ? 'show' : ''}>
-        <a href="/nosotros">Nosotros</a>
-        <a href="/galeria">Galería</a>
-        <a href="/notihope">Notihope</a>
-        <a href="/visitanos">Visítanos</a>
-        <a href="https://hopesudamerica.org/ubicacion/ecuador/index.html">Contáctanos</a>
+        <Link to="/nosotros" onClick={() => setMenuOpen(false)}>Nosotros</Link>
+        <Link to="/galeria" onClick={() => setMenuOpen(false)}>Galería</Link>
+        <Link to="/notihope" onClick={() => setMenuOpen(false)}>Notihope</Link>
+        <Link to="/eventos" onClick={() => setMenuOpen(false)}>Eventos</Link>
+        <Link to="/visitanos" onClick={() => setMenuOpen(false)}>Visítanos</Link>
       </nav>
     </header>
   );
