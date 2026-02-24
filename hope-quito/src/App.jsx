@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Carousel from './components/Carousel';
-import FlipCard from './components/FlipCard';
+import FlipCard from './components/Flipcard';   // <-- aquí está el cambio
 import Footer from './components/Footer';
 import ThemeToggle from './components/ThemeToggle';
 import Nosotros from './components/Nosotros';

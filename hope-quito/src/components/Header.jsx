@@ -48,11 +48,6 @@ const Header = () => {
         <Link to="/notihope" onClick={() => setMenuOpen(false)}>Notihope</Link>
         <Link to="/eventos" onClick={() => setMenuOpen(false)}>Eventos</Link>
         <Link to="/visitanos" onClick={() => setMenuOpen(false)}>Visítanos</Link>
-        <a href="/nosotros">Nosotros</a>
-        <a href="/galeria">Galería</a>
-        <a href="/notihope">Notihope</a>
-        <a href="/visitanos">Eventos</a>
-        <a href="/visitanos">Visítanos</a>
       </nav>
     </header>
   );
