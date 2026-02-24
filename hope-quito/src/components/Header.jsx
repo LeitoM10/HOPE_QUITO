@@ -43,19 +43,16 @@ const Header = () => {
         alt="Menú"
       />
       <nav ref={navRef} className={menuOpen ? 'show' : ''}>
-<<<<<<< HEAD
         <Link to="/nosotros" onClick={() => setMenuOpen(false)}>Nosotros</Link>
         <Link to="/galeria" onClick={() => setMenuOpen(false)}>Galería</Link>
         <Link to="/notihope" onClick={() => setMenuOpen(false)}>Notihope</Link>
         <Link to="/eventos" onClick={() => setMenuOpen(false)}>Eventos</Link>
         <Link to="/visitanos" onClick={() => setMenuOpen(false)}>Visítanos</Link>
-=======
         <a href="/nosotros">Nosotros</a>
         <a href="/galeria">Galería</a>
         <a href="/notihope">Notihope</a>
         <a href="/visitanos">Eventos</a>
         <a href="/visitanos">Visítanos</a>
->>>>>>> d1f82f84bb5e8e32c5a8ce25e32e8939312bc422
       </nav>
     </header>
   );
