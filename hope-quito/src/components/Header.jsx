@@ -48,8 +48,8 @@ const Header = () => {
         <a href="/nosotros">Nosotros</a>
         <a href="/galeria">Galería</a>
         <a href="/notihope">Notihope</a>
+        <a href="/visitanos">Eventos</a>
         <a href="/visitanos">Visítanos</a>
-        <a href="https://hopesudamerica.org/ubicacion/ecuador/index.html">Contáctanos</a>
       </nav>
     </header>
   );
