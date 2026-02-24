@@ -1,3 +1,4 @@
+// src/components/Header.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/Quito_02 Logo.png';
@@ -48,6 +49,7 @@ const Header = () => {
         <Link to="/notihope" onClick={() => setMenuOpen(false)}>Notihope</Link>
         <Link to="/eventos" onClick={() => setMenuOpen(false)}>Eventos</Link>
         <Link to="/visitanos" onClick={() => setMenuOpen(false)}>Visítanos</Link>
+        {/* Eliminé los <a> duplicados */}
       </nav>
     </header>
   );
