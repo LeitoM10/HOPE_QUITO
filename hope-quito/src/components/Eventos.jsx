@@ -1,12 +1,12 @@
-// src/components/Eventos.jsx
 import React from 'react';
 
-export const Eventos = () => {
+const Eventos = () => {
   return (
-    <div className="eventos-container">
+    <div>
       <h1>Eventos</h1>
-      <p>Próximos eventos y actividades.</p>
-      {/* Aquí iría el calendario o lista de eventos */}
+      {/* contenido */}
     </div>
   );
 };
+
+export default Eventos;

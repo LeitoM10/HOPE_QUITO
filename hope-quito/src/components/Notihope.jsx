@@ -1,12 +1,12 @@
-// src/components/Notihope.jsx
 import React from 'react';
 
-export const Notihope = () => {
+const Notihope = () => {
   return (
-    <div className="notihope-container">
+    <div>
       <h1>Notihope</h1>
-      <p>Últimas noticias y eventos de nuestra comunidad.</p>
-      {/* Aquí irían las noticias */}
+      {/* contenido */}
     </div>
   );
 };
+
+export default Notihope;

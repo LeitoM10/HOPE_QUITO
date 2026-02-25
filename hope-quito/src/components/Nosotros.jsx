@@ -1,4 +1,3 @@
-// src/components/Nosotros.jsx
 import React from 'react';
 
 const Nosotros = () => {
@@ -10,4 +9,4 @@ const Nosotros = () => {
   );
 };
 
-export default Nosotros; // <-- exportación por defecto
+export default Nosotros;
