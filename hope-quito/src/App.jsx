@@ -5,10 +5,11 @@ import Carousel from './components/Carousel';
 import FlipCard from './components/Flipcard';
 import Footer from './components/Footer';
 import ThemeToggle from './components/ThemeToggle';
-import { Nosotros } from './components/Nosotros';   // <-- con llaves
-import { Galeria } from './components/Galeria';     // <-- con llaves
-import { Notihope } from './components/Notihope';   // <-- con llaves
-import { Visitanos } from './components/Visitanos'; // <-- con llaves
+import { Nosotros } from './components/Nosotros';
+import { Galeria } from './components/Galeria';
+import { Notihope } from './components/Notihope';
+import { Eventos } from './components/Eventos';
+import { Visitanos } from './components/Visitanos';
 import { ThemeProvider } from './contexts/ThemeContext';
 import './styles/styles.css';
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/galeria" element={<Galeria />} />
             <Route path="/notihope" element={<Notihope />} />
+            <Route path="/eventos" element={<Eventos />} />
             <Route path="/visitanos" element={<Visitanos />} />
           </Routes>
         </main>
