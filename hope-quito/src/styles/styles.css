@@ -497,7 +497,7 @@ body {
 .carousel-track {
     display: flex;
     height: 100%;
-    width: 100.5%;
+    width: 100%;
     transition: transform 1.2s ease-in-out;
 }
 
@@ -621,11 +621,27 @@ body {
     }
 }
 
-/* Responsive */
+/* Responsive - CORREGIDO */
 @media (max-width: 768px) {
     .carousel-full {
         height: 60vh;
-        width: 102%;
+        width: 101.5%;
+        overflow: hidden;
+    }
+    
+    .carousel-track {
+        width: 100%;
+    }
+    
+    .slide {
+        min-width: 100%;
+        width: 100%;
+    }
+    
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .overlay h1 {
@@ -634,6 +650,14 @@ body {
 
     .overlay p {
         font-size: 1rem;
+    }
+    
+    .prev { 
+        left: 20px;
+    }
+    
+    .next { 
+        right: 20px;
     }
 }
 
